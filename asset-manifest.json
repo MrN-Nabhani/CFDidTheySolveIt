@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CFDidTheySolveIt/static/css/main.258a0700.chunk.css",
+    "main.js": "/CFDidTheySolveIt/static/js/main.1a57b321.chunk.js",
+    "main.js.map": "/CFDidTheySolveIt/static/js/main.1a57b321.chunk.js.map",
+    "runtime-main.js": "/CFDidTheySolveIt/static/js/runtime-main.89d0a00c.js",
+    "runtime-main.js.map": "/CFDidTheySolveIt/static/js/runtime-main.89d0a00c.js.map",
+    "static/js/2.bc50db0b.chunk.js": "/CFDidTheySolveIt/static/js/2.bc50db0b.chunk.js",
+    "static/js/2.bc50db0b.chunk.js.map": "/CFDidTheySolveIt/static/js/2.bc50db0b.chunk.js.map",
+    "index.html": "/CFDidTheySolveIt/index.html",
+    "precache-manifest.1adc10f3c2f75a3bb84124d102e9d335.js": "/CFDidTheySolveIt/precache-manifest.1adc10f3c2f75a3bb84124d102e9d335.js",
+    "service-worker.js": "/CFDidTheySolveIt/service-worker.js",
+    "static/css/main.258a0700.chunk.css.map": "/CFDidTheySolveIt/static/css/main.258a0700.chunk.css.map",
+    "static/js/2.bc50db0b.chunk.js.LICENSE.txt": "/CFDidTheySolveIt/static/js/2.bc50db0b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89d0a00c.js",
+    "static/js/2.bc50db0b.chunk.js",
+    "static/css/main.258a0700.chunk.css",
+    "static/js/main.1a57b321.chunk.js"
+  ]
+}
