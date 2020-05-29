@@ -32,7 +32,7 @@ function App() {
   const makeRequest = async ()=>{
     let requests = {user_names: [], calls: []};
     
-    let updatedUsersData = {}; //{'handle': 'STATUS'}
+    let updatedUsersData = {}; // {'handle': 'STATUS'}
 
     for (const user in storedUsers) {
       requests.user_names.push(user);
@@ -86,26 +86,16 @@ function App() {
 	
   const handleChange = (evt)=>{
 
-    let str = evt.target.value.replace(/\s/g,'').toUpperCase();
-    //console.log(str);
+		let str = evt.target.value.replace(/\s/g,'').toUpperCase();
+		
     const id = parseInt(str);
     const index = str.replace(id, '');
 
     if(str.length === 0 || isNaN(id) || index === ''){
-      // this.setState({
-      //   users: {'Hanii.Gerges': 'HIDE', 'Mr.N_Nabhani': 'HIDE', 'theBiker': 'HIDE'},
-      //   isLoading: false
-      // });
       return;
     }
 		
 		setQueryProblem({id, index});
-		
-    // this.setState({
-    //   id: id,
-    //   index: index,
-    //   isLoading: true
-    // }, ()=>this.makeRequest());
 
 	}
 	

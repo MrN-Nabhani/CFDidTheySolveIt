@@ -26,8 +26,9 @@ function AddUserBtn(){
 
 			 }
 		 ).catch((err) => {
-			console.log(`user not found`);
-			throw err;
+				alert('user not found!');
+				console.log(`user not found`);
+				throw err;
 		 });
 	}
 
