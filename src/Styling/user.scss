@@ -1,46 +1,7 @@
 *{  text-align: center; box-sizing: border-box; }
 
-body {
-   background:#282c34;  /*  bgColor*/
-   color: #fff;
-}
-
-.App-header{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-input{
-  align-self: center;
-  height: 40px;
-  margin: 0px 5px;
-  border: none;
-
-  font-size: 35pt;
-  
-  font-variant-caps: all-petite-caps;
-  font-family: monospace;
-
-  width: 100px;
-  text-align: center;
-  outline: none;
-  border-bottom: #fff 1px solid;
-  background-color: transparent;
-  color: #fff;
-}
-
-.users-area {
-  justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top:  60px;
-  width:   auto;
-}
-
 a{
   text-decoration: none;
-  font-style: none;
   color: white;
 }
 
@@ -90,24 +51,7 @@ a{
     }
 
     &:hover{
-
       background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%);
-
-
-      .display-on-hover{
-        display: block;
-      }
-
-      .main{
-        display: none;
-      }
     }
-
 }
- 
-/*
-1296C
-1293B
-1272C
 
-*/

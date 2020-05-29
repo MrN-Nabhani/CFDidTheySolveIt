@@ -1,0 +1,53 @@
+*{  text-align: center; box-sizing: border-box; }
+
+body {
+   background:#282c34;  /*  bgColor*/
+   color: #fff;
+}
+
+.App-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  input{
+    margin: 0px 5px;
+
+    max-width: 150px;
+    height: 40px;
+
+    align-self: center;
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-family: monospace;
+    font-size: 35pt;
+    
+    outline: none;
+
+    border: none;
+    border-bottom: #fff 1px solid;
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+
+
+.users-area {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:  60px;
+  width:   auto;
+}
+
+
+
+ 
+/*
+1296C
+1293B
+1272C
+
+*/
