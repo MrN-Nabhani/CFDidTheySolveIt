@@ -12,16 +12,16 @@
   &:hover{
     background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%);
 
-    #btn{
+    .btn{
       background-color: rgba(51, 51, 51, 0.3);
       cursor: pointer;
     }
-    #in{
+    .handleInputField{
       color: #333;
     }
   }
 
-  #btn{
+  .btn{
     color: #fff;
     
     width: 150px;
@@ -35,7 +35,7 @@
   }
   
 
-  #in{
+  .handleInputField{
       max-width: 150px;
       height: 40px;
   

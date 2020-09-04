@@ -1,11 +1,41 @@
-*{  text-align: center; box-sizing: border-box; }
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-.user{
+
+.userContainer{
+  position: relative;
+  .remove-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    
+    
+    padding: 0.5rem 1rem;
+
+    border: none;
+    border-radius: 20% 0 0 0 ;
+    
+    background-color: white;
+    font-family: monospace;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+  }
+}
+
+
+.user {
   display: flex;
   flex-flow: column nowrap;
   width: 200px;
@@ -14,44 +44,43 @@ a{
   border: 1px solid white;
   border-radius: 3%;
 
-    img{
-      align-self: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
+  img {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 
+  .status {
+    margin: auto;
+    width: 50%;
 
-    .display-on-hover{
+    #HIDE {
       display: none;
     }
 
-    .status{
-      
-      margin-top: auto;
-      margin-bottom: 12px;
-
-      #HIDE{
-        display: none;
-      }
-
-      #SOLVED{
-        color: limegreen;
-      }
-
-      #TRIED{
-        color: darkorange;
-      }
-
-      #NOT-SOLVED{
-        color: red;
-      }
+    #SOLVED {
+      color: limegreen;
     }
 
-    &:hover{
-      background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%);
+    #TRIED {
+      color: darkorange;
     }
+
+    #NOT-SOLVED {
+      color: red;
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+      radial-gradient(
+        88% 271%,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(254, 254, 254, 0.25) 1%,
+        rgba(0, 0, 0, 0.25) 100%
+      );
+  }
 }
-

@@ -1,35 +1,25 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { ADD_USER } from '../Redux/actions/types';
+import { AddUser } from '../Redux/actions/AddUser';
 
 import '../Styling/UserBtn.scss';
 
 import Axios from 'axios';
 
-function AddUserBtn(){
+const AddUserBtn = () =>{
 	
 	const [user, setUser] = useState('');
 	const dispatch = useDispatch();
 
 	const addNewUser = ()=>{
-
-		 Axios.get('https://codeforces.com/api/user.status', {params: {handle: user}}).then(
-			 (res)=>{
-				console.log(`user found!`);
-
-				dispatch({
-					type: ADD_USER,
-					payload: user
-				});
-				
+		Axios.get('https://codeforces.com/api/user.status', {params: {handle: user}}).then(
+			(res)=>{
+				dispatch(AddUser(user));				
 				setUser('');
-
-			 }
-		 ).catch((err) => {
-				alert('user not found!');
-				console.log(`user not found`);
-				throw err;
-		 });
+			}
+		).catch((err) => {
+			alert('user not found!');
+		});
 	}
 
 	return(
@@ -37,9 +27,9 @@ function AddUserBtn(){
 		<div className='addUserBtn'>
 			<h3> Add User </h3>
 			
-			<button id='btn' onClick={()=>{addNewUser()}}>+</button>
+			<button className='btn' onClick={()=>{addNewUser()}}>+</button>
 
-			<input value={user} id='in' type="text" placeholder="enter handle"
+			<input value={user} className='handleInputField' type="text" placeholder="enter handle"
 			onChange={ (evt)=>{setUser(evt.target.value)} } />
 
 		</div>
